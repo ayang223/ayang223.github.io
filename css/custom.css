@@ -149,8 +149,8 @@ p{
 	display: block;
 	position: relative;
 	margin: 0 auto;
-	height: 178px;
-	width: 455px;
+	height: 15vh;
+	width: 40vh;
 	max-width: 650px;
 	margin-bottom: 50px;
 	border-style: solid;
@@ -205,10 +205,10 @@ img{
 
 @media(max-width:768px) {
     .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
-        font-size: 16px;
+        font-size: 12px;
     }
 
     .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
-        font-size: 22px;
+        font-size: 18px;
     }
 }
