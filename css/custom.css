@@ -29,6 +29,30 @@ html, body{
 	color: #8b8b8b;
 }
 
+.navbar.solid {
+	background-color: #fff;
+	transition: background-color 1s ease 0s;
+	color: #8b8b8b;
+}
+
+.navbar.solid.navbar-default .navbar-header .navbar-brand{
+	color: #8b8b8b;
+}
+
+.navbar.solid.navbar-default .navbar-header .navbar-brand:hover,
+.navbar.solid.navbar-default .navbar-header .navbar-brand:focus {
+    color: #d2d2d2;
+}
+
+.nav.solid.nav.navbar-nav.navbar-right li a{
+	color: #8b8b8b;
+}
+
+.nav.solid.navbar-nav.navbar-right li a:hover,
+.nav.solid.navbar-nav.navbar-right li a:focus{
+	color: #d2d2d2;
+}
+
 hr{
 	max-width: 75px;
 	border-width: 2px;
