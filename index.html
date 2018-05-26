@@ -9,48 +9,6 @@
 	<meta name="author" content="">
 
 	<title>Alex Yang</title>
-
-	<!-- Bootstrap -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<!-- Custom CSS -->
-	<link rel="stylesheet" href="css/custom.css" type="text/css">
-	<!-- jQuery and bootstrapjs-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-	<!-- Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
-	<!-- JS -->
-	<script>
-		$(document).ready(function(){
-			$('.slide-section').click(function(e){
-				var linkHref = $(this).attr('href');
-
-				$('html, body').animate({
-					scrollTop: $(linkHref).offset().top},1000);
-				
-				e.preventDefault();
-			});
-		});
-	</script>
-
-	<script>
-		var winH = $(window).height();
-
-		$(document).ready(function(){
-			$(window).scroll(function(){
-				if($(this).scrollTop()>winH){
-					$('.navbar').addClass('solid');
-					$('.nav').addClass('solid');
-				} else {
-					$('.navbar').removeClass('solid');
-					$('.nav').addClass('solid');
-				}
-			});
-		});
-	</script>
-
 </head>
 
 <body id="top">
@@ -281,6 +239,22 @@
 			</div>
 		</div>
 	</section>
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/custom.css" type="text/css">
+	<!-- jQuery and bootstrapjs-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
+	<!-- JS -->
+	<script src ="js/scroll.js"></script>
+	<script src ="js/navbar.js"></script>
+
 
 </body>
 
