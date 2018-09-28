@@ -252,6 +252,7 @@ button:hover {
     overflow: hidden;
     font-family: 'Montserrat', sans-serif;
     border: none;
+    margin-bottom: 30px;
 }
 
 .project {
