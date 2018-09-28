@@ -236,3 +236,31 @@ img{
         font-size: 18px;
     }
 }
+
+
+button:focus,
+button:hover {
+    opacity: .7;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)"
+
+}
+
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+}
+
+.project {
+	text-align: center;
+}
+
+.collapsible{
+	background-color: #fff;
+	outline: none;
+	border: none;
+}
+

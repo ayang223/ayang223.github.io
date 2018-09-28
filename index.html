@@ -55,7 +55,7 @@
 		</div>
 	</div>
 
-
+	<!--About Me -->
 	<section class="bg-primary" id="about">
 		<div class="container">
 			<div class="row">
@@ -64,7 +64,7 @@
 					<hr>
 					<p>I'm Alex, a self-motivated recent graduate from the University of British Columbia with a major in Computer Science. I enjoy seeking challenging problems to solve as well as learning about new things. I work well with others and also have strong communication skills.</p>
 					<br>
-					<p>I have experienced in web development using JavaScript, HTML, CSS, ReactJS and NodeJS as well as database knowledge with SQL. In addition to web development, I also have some experience in mobile app development with Android as well as experience with UX,</p>
+					<p>I have experience in web development using JavaScript, HTML, CSS, ReactJS and NodeJS as well as database knowledge with SQL. In addition to web development, I also have some experience in mobile app development with Android as well as experience with UX,</p>
 					<br>
 					<a href="#contact" class="btn btn-default slide-section">Contact me</a>
 				</div>
@@ -73,6 +73,7 @@
 		</div>
 	</section>
 
+	<!--Porjects -->
 	<section class="bg-default" id="projects">
 		<div class="container">
 			<div class ="row">
@@ -82,138 +83,149 @@
 				</div>
 			</div>
 		</div>
-		<br>
-		<div class="container">
-			<div class="col-lg-10 col-lg-offset-1 text-center">
-				<div class="row">
-					<div class="col-md-6 small-padding">
-						<div class="portfolio-box">
-							<!-- <img src="img/unitedway.png" class="img-responsive" alt=""> -->
-							<div class="portfolio-box-caption">
-								<div class="portfolio-box-caption-content">
-									<div class="project-name">
-										United Way Dashboard
-									</div>
-									<div class="project-category">
-										Dashboard application for visualizing data
-									</div>
-								</div>
-							</div>
-						</div>
+		<div class ="row">
+			<div class ='col-md-8 col-md-offset-2 abc '>
+				<div class='project'>
+					<button class="collapsible"><img src="img/unitedway.png" class="img-responsive" alt="">
+					<h3>United Way Dashboard</h3>
+					<h4>Dashboard application for visualizing data</h4></button>
+					<div class='col-lg-6 col-lg-offset-3 text-left content'>
+						<p>
+							Developed a web app for United Way that allows users to upload .CSV files onto a database. The data can then be queried through the front end client and presented visually for analytics.
+						</p>
+						<p>
+							My role in this project was that I was responsible for establishing the connection in which the front-end communicated with the back-end. I also created the Admin page which included the functions for creating and deleting users. In addition, I was also responsible for dynamically populating the filter drop down menu with fields that were from the .CSV files as well as the function for filtering out unwanted data.
+						</p>
+						<p> 
+							Tools used:
+							<ul>
+								<li>NodeJS</li>
+								<li>Express</li>
+								<li>ReactJS</li>
+								<li>Apache</li>
+								<li>MySQL</li>
+							</ul>
+						</p>
 					</div>
-					<div class="col-md-6 small-padding">
-						<div class="portfolio-box">
-							
-							<div class="portfolio-box-caption">
-								<div class="portfolio-box-caption-content">
-									<div class="project-name">
-										Price Finder
-									</div>
-									<div class="project-category">
-										nwHacks 2018 submission
-									</div>
-								</div>
-							</div>
-						</div>
+				</div>
+			<br>
+			
+			<div>
+				<div class='project'>
+					<button class="collapsible"><img src="img/nwhacks3.png" class="img-responsive" alt="">
+					<h3>Price Finder</h3>
+					<h4>nwHacks 2018 submission</h4></button>
+					<div class='col-lg-6 col-lg-offset-3 text-left content'>
+						<p>
+							A web-scrapper made for nwHacks 2018. What this web-scrapper does is when a user enters an item into the search, it looks through various sites such as Amazon, Kijiji, and Craigslist and returns which site has the cheapest item, as well as the min/max and average price. I was responsible for creating the functions that searched through kijiji
+						</p>
+						<p>
+							The reason my team decided to do this as a hackathon submission was that none of us knew how to use python and decided it was a good opportunity to learn a new language.
+						</p>
+						<p> 
+							Tools used:
+							<ul>
+								<li>Python</li>
+								<li>BeautifulSoup</li>
+							</ul>
+						</p>
 					</div>
-					<div class="col-md-6 small-padding">
-						<div class="portfolio-box">
-							
-							<div class="portfolio-box-caption">
-								<div class="portfolio-box-caption-content">
-									<div class="project-name">
-										Pomodoro Timer
-									</div>
-									<div class="project-category">
-										Lumoshack 2017 submission
-									</div>
-								</div>
-							</div>
-						</div>
+				</div>
+			</div>
+			<br>
+			<div>
+				<div class='project'>
+					<button class="collapsible"><img src="img/lumoshack.jpg" class="img-responsive" alt="">
+					<h3>Pomodoro Timer</h3>
+					<h4>Lumoshack 2017 submission</h4></button>
+					<div class='col-lg-6 col-lg-offset-3 text-left content'>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						</p>
 					</div>
-					<div class="col-md-6 small-padding">
-						<div class="portfolio-box">
-							
-							<div class="portfolio-box-caption">
-								<div class="portfolio-box-caption-content">
-									<div class="project-name">
-										Webscraper
-									</div>
-									<div class="project-category">
-										Webscraper that sends phone notification if a condition is met
-									</div>
-								</div>
-							</div>
-						</div>
+				</div>
+			</div>
+			<br>
+			<div>
+				<div class='project'>
+					<button class="collapsible"><img src="img/scraper1.png" class="img-responsive" alt="">
+					<h3>Web-scraper</h3>
+					<h4>Web-scraper with phone notification</h4></button>
+					<div class='col-lg-6 col-lg-offset-3 text-left content'>
+						<p>
+							Continuing from what I've learned from nwHacks, I developed another web-scrapper with python but with a different purpose. Using the Pushbullet API, I can receive notifications on my phone if the variable I'm looking for is found on the site. 
+							The initial intention for developing this was to help my friend be notified when there is an available spot for a course.
+						</p>
+						<p> 
+							Tools used:
+							<ul>
+								<li>Python</li>
+								<li>BeautifulSoup</li>
+								<li>Pushbullet API</li>
+							</ul>
+						</p>
 					</div>
-					<div class="col-md-6 small-padding">
-						<div class="portfolio-box">
-							
-							<div class="portfolio-box-caption">
-								<div class="portfolio-box-caption-content">
-									<div class="project-name">
-										Beach Please
-									</div>
-									<div class="project-category">
-										Global Game Jam 2017 submission
-									</div>
-								</div>
-							</div>
-						</div>
+				</div>
+			</div>
+			<br>
+			<div>
+				<div class='project'>
+					<button class="collapsible"><img src="img/bp1.png" class="img-responsive" alt="">
+					<h3>Beach Please</h3>
+					<h4>Global Game Jam 2017 submission</h4></button>
+					<div class='col-lg-6 col-lg-offset-3 text-left content'>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						</p>
 					</div>
-					<div class="col-md-6 small-padding">
-						<div class="portfolio-box">
-							
-							<div class="portfolio-box-caption">
-								<div class="portfolio-box-caption-content">
-									<div class="project-name">
-										Interface Wireframe
-									</div>
-									<div class="project-category">
-										Interface prototype for a web tutoring service
-									</div>
-								</div>
-							</div>
-						</div>
+				</div>
+			</div>
+			<br>
+			<div>
+				<div class='project'>
+					<button class="collapsible"><img src="img/wireframe.png" class="img-responsive" alt="">
+					<h4>Interface Wireframe</h4>
+					<h4>Interface prototype for a web tutoring service</h4></button>
+					<div class='col-lg-6 col-lg-offset-3 text-left content'>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						</p>
 					</div>
-					<div class="col-md-6 small-padding">
-						<div class="portfolio-box">
-							
-							<div class="portfolio-box-caption">
-								<div class="portfolio-box-caption-content">
-									<div class="project-name">
-										Imagehoster
-									</div>
-									<div class="project-category">
-										Collaborative site to share images
-									</div>
-								</div>
-							</div>
-						</div>
+				</div>
+			</div>
+			<br>
+			<div>
+				<div class='project'>
+					<button class="collapsible"><img src="img/hoster.png" class="img-responsive" alt="">
+					<h3>Imagehoster</h3>
+					<h4>Collaborative site to share images</h4></button>
+					<div class='col-lg-6 col-lg-offset-3 text-left content'>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						</p>
 					</div>
-					<div class="col-md-6 small-padding">
-						<div class="portfolio-box">
-							
-							<div class="portfolio-box-caption">
-								<div class="portfolio-box-caption-content">
-									<div class="project-name">
-										Restaurant Finder
-									</div>
-									<div class="project-category">
-										Location guessing Android game
-									</div>
-								</div>
-							</div>
-						</div>
+				</div>
+			</div>
+			<br>
+			<div>
+				<div class='project'>
+					<button class="collapsible"><img src="img/finder.png" class="img-responsive" alt="">
+					<h3>Restaurant Finder</h3>
+					<h4>Location guessing Android game</h4></button>
+					<div class='col-lg-6 col-lg-offset-3 text-left content'>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						</p>
 					</div>
-					
-
-
 				</div>
 			</div>
 		</div>
+	</div>
+
+
 	</section>
 
+	<!--Contact Me -->
 	<section class="bg-primary" id="contact">
 		<div class="container">
 			<div class ="row">
@@ -254,7 +266,7 @@
 	<!-- JS -->
 	<script src ="js/scroll.js"></script>
 	<script src ="js/navbar.js"></script>
-
+	<script src ="js/collapsible.js"></script>
 
 </body>
 
