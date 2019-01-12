@@ -1,6 +1,6 @@
-html, body{
-	height: 100%;
-	width: 100%;
+html,body{
+    width: 100%;
+    height: 100%;
 }
 
 .navbar-default{
@@ -8,6 +8,7 @@ html, body{
 	background-color: transparent;
 	font-family: 'Montserrat', sans-serif;
 }
+
 
 .navbar-default .navbar-header .navbar-brand{
 	color: #d2d2d2;
@@ -265,3 +266,28 @@ button:hover {
 	border: none;
 }
 
+
+.container-fluid {
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.row{
+	margin-right:0px;
+}
+
+
+@media (max-width: 768px) {
+  nav.navbar {
+    background: white;
+
+  }
+}
+
+@media (max-width: 768px){
+	.navbar-default .navbar-header .navbar-brand{
+		color: #8b8b8b;
+	}
+}
