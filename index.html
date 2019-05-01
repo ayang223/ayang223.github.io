@@ -1,307 +1,492 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="">
-	<meta name="author" content="">
-
-	<title>Alex Yang</title>
-	<!-- Bootstrap -->
+<html>
+  <head>
+    <title>Alex Yang</title>
+    <meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<!-- Custom CSS -->
-	<link rel="stylesheet" href="css/custom.css" type="text/css">
-</head>
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body id="top">
+		<nav id=mainNav" class ="navbar navbar-default navbar-fixed-top">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavBar">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						<a class="navbar-brand slide-section" href="#top">Alex Yang</a>
+					</div>
+		
+					<div class="collapse navbar-collapse" id="myNavBar">
+						<ul class="nav navbar-nav navbar-right">
+							<li>
+								<a class ="slide-section" href="#main">Projects</a>
+							</li>
+							<li>
+								<a class ="slide-section" href="#about">About</a>
+							</li>
+							<li>
+								<a class ="slide-section" href="#footer">Contact</a>
+							</li>
+						</ul>
+					</div>
+				</div> <!-- container fluid -->
+			</nav>
 
-<body id="top">
-	<nav id=mainNav" class ="navbar navbar-default navbar-fixed-top">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavBar">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-				<a class="navbar-brand slide-section" href="#top">Alex Yang</a>
-			</div>
+    <!-- Banner -->
 
-			<div class="collapse navbar-collapse" id="myNavBar">
-				<ul class="nav navbar-nav navbar-right">
-					<li>
-						<a class ="slide-section" href="#about">About</a>
-					</li>
-					<li>
-						<a class ="slide-section" href="#projects">Projects</a>
-					</li>
-					<li>
-						<a class ="slide-section" href="#contact">Contact</a>
-					</li>
-				</ul>
-			</div>
-		</div> <!-- container fluid -->
-	</nav>
+    <div id="banner">
+      <div class="inner">
+        <h1>Alex Yang</h1>
+        <hr class="light" />
+        <h4>
+          Bachelor of Science, majored in Computer Science from the University
+          of British Columbia
+        </h4>
+        <br />
+        <a href="#main" class="more">Learn More</a>
+      </div>
+    </div>
 
-	<div id="home">
-		<div class="landing-text">
-			<h1>Alex Yang </h1>
-			<hr class="light">
-			<h4>Bachelor of Science, majored in Computer Science from the University of British Columbia</h4>
-			<br>
-			<a href="#about" class="btn btn-primary slide-section">Find out more</a>
-		</div>
+    <!-- Main -->
+    <div id="main">
+		
+      <div class="inner">
+			<h1 class= "projectHeader" > Projects</h1>
+        <!-- Boxes -->
+        <div class="thumbnails">
+          <!-- <div class="box">
+            <a class="image fit">
+              <img src="" alt=""/>
+            </a>
+            <div class="inner">
+              <h3>Help Change My City</h3>
+              <h4>Website for non-profit</h4>
+              <br>
+              <a>
+                <button class="button fit" data-modal="#modalHCMC">
+                  Info
+                </button>
+              </a>
+              <a 
+                href=""
+                target="_blank"
+                class="button fit">GitHub
+              </a>
+              <div id="modalHCMC" class="modal">
+                <div class="modal-content">
+                  <div class="contact-form">
+                    <a class="close">&times;</a>
+                    <p>
+                      Developed a web app for United Way that allows users to upload .CSV files onto a database. The data can then be queried through the front-end client and presented visually for analytics.
+                    </p>
+                    <p>
+                      My role in this project was a full stack developer. I was responsible for the connection of the back-end through a servlet as well as creating an Admin page that included features for creating and deleteing users. In addition I was also in charge of dynamically populating drop down menus for filtering the data.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+          <div class="box">
+            <a class="image fit">
+              <img src="/images/unitedway.png" alt=""/>
+            </a>
+            <div class="inner">
+              <h3>United Way Dashboard</h3>
+              <h4>Application for visualizing data</h4>
+              <br>
+              <a>
+                <button class="button fit" data-modal="#modalOne">
+                  Info
+                </button>
+              </a>
+              <a 
+                href="https://github.com/ayang223/team-11"
+                target="_blank"
+                class="button fit">GitHub
+              </a>
+              <div id="modalOne" class="modal">
+                  <div class="modal-content">
+                    <div class="contact-form">
+                      <a class="close">&times;</a>
+                      <br>
+                      <p>
+                        Developed a React web app for United Way that allows users to upload .CSV files onto a database. The data can then be queried through the front-end client and presented visually for analytics.
+                      </p>
+                      <p>
+                        My role in this project was a full stack developer. I was responsible for the connection of the back-end through a servlet as well as creating an Admin page that included features of creating and deleteing users. In addition, I was also in charge of dynamically populating drop down menus for filtering the data as well as presenting the wanted data.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="box">
+              <a class="image fit">
+                <img src="/images/ada-logo1.png" alt=""/>
+              </a>
+              <div class="inner">
+                <h3>Ada's Artistry</h3>
+                <h4>Beauty salon site</h4>
+                <br>
+                <a>
+                  <button class="button fit" data-modal="#modalTwo">
+                    Info
+                  </button>
+                </a>
+                <a 
+                  href="https://github.com/clai94/ada-artistry"
+                  target="_blank"
+                  class="button fit">GitHub
+                </a>
+                <div id="modalTwo" class="modal">
+                  <div class="modal-content">
+                    <div class="contact-form">
+                      <span class="close">&times;</span>
+                      <br>
+                      <p>Developed a beauty salon website using Angular, firebase and Google App scripts with the main focus of handling appointment scheduling.</p>
+                      <p>For this project, my main task was to develop the front-end. In addition to the front-end design, I also worked on the contact form that was built with Google App Scripts. This was done so the contact forms could be sent to an email without having to set up a server.</Script></p>
+                      <p>You can view the demo here: <a href="https://clai94.github.io/ada-artistry/" target="_blank">demo</a></p><br>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <div class="box">
+            <a class="image fit">
+              <img src="/images/nwhacks3.png" alt=""/>
+            </a>
+            <div class="inner">
+              <h3>Price Finder</h3>
+              <h4>nwHackers 2018 submission</h4>
+              <br>
+              <a>
+                <button class="button fit" data-modal="#modalThree">
+                  Info
+                </button>
+              </a>
+              <a 
+                href="https://github.com/ayang223/NwHacks2018-1"
+                target="_blank"
+                class="button fit">GitHub
+              </a>
+              <div id="modalThree" class="modal">
+                <div class="modal-content">
+                  <div class="contact-form">
+                    <span class="close">&times;</span>
+                    <br>
+                    <p>A web scraper made for nwHacks 2018. This web scraper allows users enters an item to search. Scanning through various sites such as Amazon, Kijiji, and Craigslist, it then returns which site has the cheapest item, min/max and average price. My role was to create the function that searched through Kijiji.</p><br>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="box">
+            <a class="image fit">
+              <img src="/images/react.png" alt=""/>
+            </a>
+            <div class="inner">
+              <h3>React App</h3>
+              <h4>Todo list</h4>
+              <br>
+              <a>
+                <button class="button fit" data-modal="#modalFour">
+                  Info
+                </button>
+                </a>
+                <a 
+                  href="https://github.com/ayang223/react-app-todo"
+                  target="_blank"
+                  class="button fit">GitHub
+                </a>
+                <div id="modalFour" class="modal">
+                  <div class="modal-content">
+                    <div class="contact-form">
+                      <span class="close">&times;</span>
+                      <br>
+                      <p>A todo list built with React. </p><br>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <div class="box">
+            <a class="image fit">
+              <img src="/images/react.png" alt=""/>
+            </a>
+            <div class="inner">
+              <h3>React App</h3>
+              <h4>Budgeting tool</h4>
+              <br>
+              <a>
+              <button class="button fit" data-modal="#modalFive">
+                Info
+              </button>
+              </a>
+              <button
+                href=""
+                target="_blank"
+                class="button fit"
+                disabled>GitHub
+              </button>
+              <div id="modalFive" class="modal">
+                <div class="modal-content">
+                  <div class="contact-form">
+                    <span class="close">&times;</span>
+                    <br>
+                    <p>WIP</p><br>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="box">
+            <a class="image fit">
+              <img src="/images/bp1.png" alt=""/>
+            </a>
+            <div class="inner">
+              <h3>Beach Please</h3>
+              <h4>Global Game Jam 2017 submission</h4>
+              <br>
+              <a>
+                <button class="button fit" data-modal="#modalSix">
+                  Info
+                </button>
+              </a>
+              <a 
+                href="https://github.com/ayang223/BeachPlease"
+                target="_blank"
+                class="button fit">GitHub
+              </a>
+              <div id="modalSix" class="modal">
+                <div class="modal-content">
+                  <div class="contact-form">
+                    <span class="close">&times;</span>
+                    <br>
+                    <p>Using Unreal Engine, developed a tower defense game as a submission for the Global Game Jam 2017 event. I was responsible for designing the interface, and balancing the game.</p><br>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="box">
+            <a class="image fit">
+              <img src="/images/lumoshack.jpg" alt=""/>
+            </a>
+            <div class="inner">
+              <h3>Pomodoro Timer</h3>
+              <h4>Lumoshack 2017 submission</h4>
+              <br>
+              <a>
+                <button class="button fit" data-modal="#modalSeven">
+                  Info
+                </button>
+              </a>
+              <a 
+                href="https://github.com/ayang223/lumoshack2017"
+                target="_blank"
+                class="button fit">GitHub
+              </a>
+              <div id="modalSeven" class="modal">
+                <div class="modal-content">
+                  <div class="contact-form">
+                    <span class="close">&times;</span>
+                    <br>
+                    <p>Lumohack is a health categorized hackathon, so my team developed a Pomodoro timer to remind students to take study breaks. What makes this Pomodoro timer submission unique from the others, is this timer consists of a social aspect which allows users to chat and meet up with other nearby users who are studying. I was in charge of the basic functions and design of the clock and timer.</p><br>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="box">
+            <a class="image fit">
+              <img src="/images/parser.png" alt=""/>
+            </a>
+            <div class="inner">
+              <h3>CNN Parser</h3>
+              <h4>Parser for CNN articles</h4>
+              <br>
+              <a>
+                <button class="button fit" data-modal="#modalEight">
+                  Info
+                </button>
+              </a>
+              <a 
+                href="https://github.com/ayang223/CNN-Parser"
+                target="_blank"
+                class="button fit">GitHub
+              </a>
+              <div id="modalEight" class="modal">
+                <div class="modal-content">
+                  <div class="contact-form">
+                      <span class="close">&times;</span>
+                      <br>
+                      <p>Using Java, developed a tool that takes the top headlines on the CNN websites and stores it into a CSV file along with the author and the date of the posted article.</p>
+                      <p>Running it multiple times will add only the new artcles to the existing CSV file.</p><br>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="box">
+            <a class="image fit">
+              <img src="/images/scraper1.png" alt=""/>
+            </a>
+            <div class="inner">
+              <h3>Web Monitor</h3>
+              <h4>Web monitor with phone notifcation</h4>
+              <br>
+              <a>
+                <button class="button fit" data-modal="#modalNine">
+                  Info
+                </button>
+              </a>
+              <a 
+                href="https://github.com/ayang223/web-monitor"
+                target="_blank"
+                class="button fit">GitHub
+              </a>
+              <div id="modalNine" class="modal">
+                <div class="modal-content">
+                  <div class="contact-form">
+                    <span class="close">&times;</span>
+                    <br>
+                    <p>Developed a python script that monitors a webpage and sends a notification to your phone using the Pushbullet API. My intent for developing this was to assist my friends in notifying course availability.</p><br>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="box">
+            <a class="image fit">
+              <img src="/images/hoster.png" alt=""/>
+            </a>
+            <div class="inner">
+              <h3>Imagehoster</h3>
+              <h4>Collaborative site to share images</h4>
+              <br>
+              <a>
+              <button class="button fit" data-modal="#modalTen">
+                Info
+                </button>
+              </a>
+              <a 
+                href="https://github.com/UBC-CS310-2015w2/DreamTeam"
+                target="_blank"
+                class="button fit">GitHub
+              </a>
+              <div id="modalTen" class="modal">
+                <div class="modal-content">
+                  <div class="contact-form">
+                    <a class="close">&times;</a>
+                    <br>
+                    <p>
+                      Developed an image hosting web application similar to 9GAG, which allows users to upload images to share with others users on the app.
+                    </p>
+                    <p>
+                      Main responsibilities included creating a user profile, and implementing functions for posting and deleting images or comments.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="box">
+            <a class="image fit">
+              <img src="/images/finder.png" alt=""/>
+            </a>
+            <div class="inner">
+              <h3>Restaurant Finder</h3>
+              <h4>Location guessing Andriod game</h4>
+              <br>
+              <a>
+              <button class="button fit" data-modal="#modal11">
+                Info
+              </button>
+              </a>
+              <a 
+                href=""
+                target="_blank"
+                class="button fit">GitHub
+              </a>
+              <div id="modal11" class="modal">
+                <div class="modal-content">
+                  <div class="contact-form">
+                    <a class="close">&times;</a>
+                    <br>
+                    <p>
+                      An android guessing game, in which users guess where a restaurant is located. Markers are then plotted indicating the distance to the restaurant, and the route.
+                    </p>
+                    <p>
+                      I implemented and tested parser for Yelp and Google Map API as well as implemented methods to plot markers on the map. In addition, I was also in-charge of setting colours on the markers based on the distance of the guess and actual restaurant as well as plotting a route between the markers.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	</div>
+	
+	<div id="about">
+		<div class="inner">
+			<h1 class="aboutHeader">About Me</h1>
+					<p>I'm Alex, an aspiring web developer that graduated from the University of British Columbia with a major in Computer Science. I enjoy seeking challenging problems to solve as well as learning about new things. I work well with others and also have strong communication skills.</p>
+					<p>I have experience in web development using JavaScript, HTML, CSS, ReactJS and NodeJS as well as database knowledge with SQL. In addition to web development, I also have some experience in mobile app development with Android as well as experience with UX.</p>
+					<br>
+		</div>	
 	</div>
 
-	<!--About Me -->
-	<section class="bg-primary" id="about">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-8 col-lg-offset-2 text-center">
-					<h1 class="aboutmeHeader">About Me</h1>
-					<hr>
-					<p>I'm Alex, a self-motivated recent graduate from the University of British Columbia with a major in Computer Science. I enjoy seeking challenging problems to solve as well as learning about new things. I work well with others and also have strong communication skills.</p>
-					<br>
-					<p>I have experience in web development using JavaScript, HTML, CSS, ReactJS and NodeJS as well as database knowledge with SQL. In addition to web development, I also have some experience in mobile app development with Android as well as experience with UX,</p>
-					<br>
-					<a href="#contact" class="btn btn-default slide-section">Contact me</a>
-				</div>
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="inner">
+        <h2>Contact Me</h2>
+        <ul class="icons">
+          <li>
+            <a href="https://github.com/ayang223" target="_blank" class="icon fa-github"
+              ><span class="label">GitHub</span></a
+            >
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/ayang223/" target="_blank" class="icon fa-linkedin"
+              ><span class="label">LinkedIn</span></a
+            >
+          </li>
+          <li>
+            <a href="mailto:a.yang223@gmail.com" class="icon fa-envelope"
+              ><span class="label">Email</span></a
+            >
+          </li>
+        </ul>
+        <p class="copyright">
+          &copy; Alex Yang
+        </p>
+      </div>
+    </footer>
 
-			</div>
-		</div>
-	</section>
-
-	<!--Porjects -->
-	<section class="bg-default" id="projects">
-		<div class="container">
-			<div class ="row">
-				<div class="col-lg-12 text-center">
-					<h1 class= "projectHeader"> Projects</h1>
-					<hr class="black">
-				</div>
-			</div>
-		</div>
-		<div class ="row">
-			<div class ='col-md-8 col-md-offset-2 abc '>
-				<div class='project'>
-					<button class="collapsible"><img src="img/unitedway.png" class="img-responsive" alt="">
-					<h3>United Way Dashboard</h3>
-					<h4>Dashboard application for visualizing data</h4></button>
-					<div class='col-lg-6 col-lg-offset-3 text-left content'>
-						<p>
-							Developed a web app for United Way that allows users to upload .CSV files onto a database. The data can then be queried through the front end client and presented visually for analytics.
-						</p>
-						<p>
-							My role in this project was that I was responsible for establishing the connection in which the front-end communicated with the back-end. I also created the Admin page which included the functions for creating and deleting users. In addition, I was also responsible for dynamically populating the filter drop down menu with fields that were from the .CSV files as well as the function for filtering out unwanted data.
-						</p>
-						<p> 
-							Tools used:
-							<ul>
-								<li>NodeJS</li>
-								<li>Express</li>
-								<li>ReactJS</li>
-								<li>Apache</li>
-								<li>MySQL</li>
-							</ul>
-						</p>
-					</div>
-				</div>
-			<br>
-			
-			<div>
-				<div class='project'>
-					<button class="collapsible"><img src="img/nwhacks3.png" class="img-responsive" alt="">
-					<h3>Price Finder</h3>
-					<h4>nwHacks 2018 submission</h4></button>
-					<div class='col-lg-6 col-lg-offset-3 text-left content'>
-						<p>
-							A web-scrapper made for nwHacks 2018. What this web-scrapper does is when a user enters an item into the search, it looks through various sites such as Amazon, Kijiji, and Craigslist and returns which site has the cheapest item, as well as the min/max and average price. I was responsible for creating the functions that searched through kijiji
-						</p>
-						<p>
-							The reason my team decided to do this as a hackathon submission was that none of us knew how to use python and decided it was a good opportunity to learn a new language.
-						</p>
-						<p> 
-							Tools used:
-							<ul>
-								<li>Python</li>
-								<li>BeautifulSoup</li>
-							</ul>
-						</p>
-					</div>
-				</div>
-			</div>
-			<br>
-			<div>
-				<div class='project'>
-					<button class="collapsible"><img src="img/lumoshack.jpg" class="img-responsive" alt="">
-					<h3>Pomodoro Timer</h3>
-					<h4>Lumohack 2017 submission</h4></button>
-					<div class='col-lg-6 col-lg-offset-3 text-left content'>
-						<p>
-							Lumohack is a hackathon related to health so my team developed a pomodoro timer to help remind students to take breaks while studying. What differentiates this pomodoro timer with others is this one has a social aspect to it which allow users to chat and meet up with other nearby users who are studying. The main function I was in charge with for this app was the basic functions and design of the clock and timer.
-						</p>
-						<p> 
-							Tools used:
-							<ul>
-								<li>Android Studio</li>
-							</ul>
-						</p>
-					</div>
-				</div>
-			</div>
-			<br>
-			<div>
-				<div class='project'>
-					<button class="collapsible"><img src="img/scraper1.png" class="img-responsive" alt="">
-					<h3>Web monitor</h3>
-					<h4>Web-monitor with phone notification</h4></button>
-					<div class='col-lg-6 col-lg-offset-3 text-left content'>
-						<p>
-							Continuing from what I've learned from nwHacks, I developed a python script that monitors a webpage and sends notifcation to your phone using the Pushbullet API.
-							The initial intention for developing this was to help my friend be notified when there is an available spot for a course.
-						</p>
-						<p> 
-							Tools used:
-							<ul>
-								<li>Python</li>
-								<li>BeautifulSoup</li>
-								<li>Pushbullet API</li>
-							</ul>
-						</p>
-					</div>
-				</div>
-			</div>
-			<br>
-			<div>
-				<div class='project'>
-					<button class="collapsible"><img src="img/bp1.png" class="img-responsive" alt="">
-					<h3>Beach Please</h3>
-					<h4>Global Game Jam 2017 submission</h4></button>
-					<div class='col-lg-6 col-lg-offset-3 text-left content'>
-						<p>
-							A tower defense game made for a submission for Global Game Jam 2017. I was responsible for designing the interface for the game as well as the balance for the game.
-						</p>
-						<p> 
-							Tools used:
-							<ul>
-								<li>Unreal Engine</li>
-							</ul>
-						</p>
-					</div>
-				</div>
-			</div>
-			<br>
-			<div>
-				<div class='project'>
-					<button class="collapsible"><img src="img/wireframe.png" class="img-responsive" alt="">
-					<h4>Interface Wireframe</h4>
-					<h4>Interface prototype for a web tutoring service</h4></button>
-					<div class='col-lg-6 col-lg-offset-3 text-left content'>
-						<p>
-							Created and tested a web interface for a tutoring system then applied statistical analysis to the results in order to determine if the interface had significant improvement compared to traditional tutoring.
-						</p>
-						<p>
-							Using a spiral design cycle, a paper prototype was developed and then tested during a walk-through. After the walk-through, problems that were found were then fixed moving onto the medium fidelity prototype. A field test was then conducted with the medium fidelity prototype.
-						</p>
-						<p> 
-							Tools used:
-							<ul>
-								<li>Axure</li>
-								<li>R Studios</li>
-							</ul>
-						</p>
-					</div>
-				</div>
-			</div>
-			<br>
-			<div>
-				<div class='project'>
-					<button class="collapsible"><img src="img/hoster.png" class="img-responsive" alt="">
-					<h3>Imagehoster</h3>
-					<h4>Collaborative site to share images</h4></button>
-					<div class='col-lg-6 col-lg-offset-3 text-left content'>
-						<p>
-							Developed a image hosting web app similar to 9gag, which allows users to upload images to share with other users on the app.
-						</p>
-						<p>
-							Main responsibilities included implementing functions for posting and deleting images and comments to the an image as well as creating a user profile.
-						</p>
-						<p> 
-							Tools used:
-							<ul>
-								<li>NodeJS</li>
-								<li>Express</li>
-								<li>Amazon Web Service</li>
-								<li>Mongodb</li>
-							</ul>
-						</p>
-					</div>
-				</div>
-			</div>
-			<br>
-			<div>
-				<div class='project'>
-					<button class="collapsible"><img src="img/finder.png" class="img-responsive" alt="">
-					<h3>Restaurant Finder</h3>
-					<h4>Location guessing Android game</h4></button>
-					<div class='col-lg-6 col-lg-offset-3 text-left content'>
-						<p>
-							An android guessing game which users guess where a restaurant would be. Markers will then be plotting indicating how close or far you are and a route would then be plotted between the markers.
-						</p>
-						<p>
-							I implemented and tested parser for Yelp and Google Map API as well as implemented methods to plot markers on the map. In addition, I was also in-charge of setting colours on the markers based on the distance of the guess and actual restaurant as well as plotting a route between the markers.
-						</p>
-						<p> 
-							Tools used:
-							<ul>
-								<li>Android Studios</li>
-								<li>Yelp API</li>
-								<li>Google Map API</li>
-							</ul>
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-	</section>
-
-	<!--Contact Me -->
-	<section class="bg-primary" id="contact">
-		<div class="container">
-			<div class ="row">
-				<div class="col-lg-12 text-center">
-					<h1 class="contactHeader"> Contact Me</h1>
-					<hr>
-				</div>
-			</div>
-		</div>
-		<br>
-		<div class="container">
-			<div class="row text-center">
-				<span class="fa-stack fa-3x">
-					<a href="https://github.com/ayang223">
-				 		<i class="fa fa-git-square"></i>
-					</a>
-				</span>
-				<span class="fa-stack fa-3x">
-					<a href="https://www.linkedin.com/in/alex-yang-03666567/">
-						<i class="fa fa-linkedin-square"></i>
-					</a>
-				</span>
-				<span class="fa-stack fa-3x">
-					<a href="mailto:ayang223@gmail.com">
-						<i class="fa fa-envelope-o"></i>
-					</a>
-				</span>
-			</div>
-		</div>
-	</section>
-
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.poptrox.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
 	<!-- jQuery and bootstrapjs-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -309,10 +494,8 @@
 	<!-- Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
 	<!-- JS -->
-	<script src ="js/scroll.js"></script>
-	<script src ="js/navbar.js"></script>
-	<script src ="js/collapsible.js"></script>
-
-</body>
-
+	<script src ="/assets/js/scroll.js"></script>
+  <script src ="/assets/js/navbar.js"></script>
+  <script src="/assets/js/modal.js"></script>
+  </body>
 </html>
